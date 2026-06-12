@@ -16,13 +16,18 @@ y=int(input("Enter a Second number:"))
 if choice == 1:
     print("Your answer is :",x+y)
 
-elif choice == 2 :
+elif choice == 2:
         print("Your answer is :",x-y)
 
-elif choice == 3 :
+elif choice == 3:
         print("Your answer is :",x*y)
 
-elif choice == 4 :
-        print("Your answer is :",x/y)
+elif choice == 4:
+        if y == 0:
+        
+            print("Cannot divide by zero")
+        else:    
+            print("Your answer is :",x/y)
 
-
+else:
+       print("Invalid Choice")
